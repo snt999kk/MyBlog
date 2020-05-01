@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en ru">
+
 <head>
     <title>Заглавная страница</title>
-    <link rel = "stylesheet" type="text/css" href = "mainPage.css" />
+    <link rel="stylesheet" type="text/css" href="mainPage.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
-<h1>
-    Привет {{.Name}}
-</h1>
-<form method = "post" action="/name">
-    <p class = "cl1">
-        Ведите ваше имя:
-    </p>
-    <input placeholder = "John Appleseed" type = "text" name="Name">
-    <input type="submit" value="Отправить" class = "button">
-</form>
-<div>
-    <form action="/about" name="about" method="LINK">
-        <button class = "button button2 button3" type="submit" formaction="/about">About</button>
-        <button class = "button button2 button3" type="submit" formaction="/profile">Profile</button>
-        <button class = "button button2 button3" type="submit" formaction="/news">News</button>
-    </form>
-</div>
-<video poster = "https://whatsism.com/uploads/posts/2020-01/1579369253_648186-1566596488.jpg" width = 200 heigth = 200>
-    <source src="https://youtu.be/WbX_wea74VA" type="audio/mpeg">
-</video>
+    <div class="container">
+        <h1>
+            Привет {{.Name}}
+        </h1>
+        <form method="post" action="/name">
+            <p class="cl1">
+                Ведите ваше имя:
+            </p>
+            <input placeholder="John Appleseed" type="text" name="Name">
+            <input type="submit" value="Отправить" class="button">
+        </form>
+        <form action="/about" name="about" method="LINK">
+            <button class="button button2 button3" type="submit" formaction="/about">About</button>
+            <button class="button button2 button3" type="submit" formaction="/profile">Profile</button>
+            <button class="button button2 button3" type="submit" formaction="/news">News</button>
+        </form>
+        <video poster="https://whatsism.com/uploads/posts/2020-01/1579369253_648186-1566596488.jpg" width=200
+            heigth=200>
+            <source src="https://youtu.be/WbX_wea74VA" type="audio/mpeg">
+        </video>
+    </div>
+
 </body>
+
 </html>
