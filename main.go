@@ -13,8 +13,8 @@ func main() {
 	Mux := mux.NewRouter()
 	Mux.HandleFunc("/", mainPageHandler)
 	Mux.HandleFunc("/mainPage.css", mainPageHandler1)
-	Mux.HandleFunc("/name", getNameHandler)
 	Mux.HandleFunc("/about", aboutHandler)
+	Mux.HandleFunc("/mainPage.js", mainPagejsHandler)
 	srv := &http.Server{
 		Addr:         ":" + port,
 		ReadTimeout:  5 * time.Second,
