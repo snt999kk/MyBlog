@@ -24,3 +24,6 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 func mainPagejsHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "mainPage.js")
 }
+func newsHandler(w http.ResponseWriter, r *http.Request) {
+
+}
